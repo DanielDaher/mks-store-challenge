@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styled from 'styled-components';
 
-const inter = Inter({ subsets: ['latin'] })
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+`;
 
 export default function Home() {
   return (
@@ -14,8 +17,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <p>Olá</p>
+      <main>
+        <Title>
+          Olá mundo
+        </Title>
       </main>
     </>
   )
