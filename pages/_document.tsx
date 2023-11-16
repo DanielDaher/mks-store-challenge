@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import StyledComponentsRegistry from '@/lib/styleRegistry'
 import { Html, Head, Main, NextScript } from 'next/document'
 
@@ -12,7 +13,7 @@ export default function Document() {
       </Head>
       <body>
         <StyledComponentsRegistry>
-          <div style={{ backgroundColor: 'red' }}>HEADER</div>
+          <Header />
           <Main />
         </StyledComponentsRegistry>
         <NextScript />
