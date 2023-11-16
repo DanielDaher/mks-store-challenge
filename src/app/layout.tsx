@@ -2,6 +2,8 @@
 
 import { Montserrat } from "next/font/google";
 import Providers from "../../lib/providers";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,7 +16,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <head></head>
       <body className={montserrat.className}>
         <Providers>
+          <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

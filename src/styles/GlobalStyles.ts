@@ -5,8 +5,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ${({ theme }) => theme.colors.mksBlue};
+    height: 100vh;
+    background-color: ${({ theme }) => theme.colors.whiteBackground};
     color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }   
 `;
 
